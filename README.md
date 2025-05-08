@@ -22,9 +22,9 @@ sudo apt install http2-server
 
 ## Quick Start
 
-### 1. Generate DASH Assets
+### 1. Generate DASH Assets (optional)
 
-Navigate to the video asset directory and run the following command to encode the video and generate the MPD file:
+To generate DASH assets for a video, navigate to the video asset directory and run the following command to encode the video and generate the MPD file:
 
 ```bash
 cd root/assets/
