@@ -43,7 +43,26 @@
             player.updateSettings({
                 streaming: {
                     abr: {
-                        ABRStrategy: 'abrDynamic'
+                        rules: {
+                            throughputRule: {
+                                active: true
+                            } ,
+                            bolaRule: {
+                                active: false
+                            },
+                            insufficientBufferRule: {
+                                active: true
+                            },
+                            switchHistoryRule: {
+                                active: false
+                            },
+                            droppedFramesRule: {
+                                active: false
+                            },
+                            abandonRequestsRule: {
+                                active: false
+                            }
+                        }
                     }
                 }
             });
