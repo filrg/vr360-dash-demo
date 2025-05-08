@@ -1,6 +1,6 @@
 # 360° Video Streaming with DASH and VR Support
 
-This project demonstrates how to stream 360° video content using [dash.js](https://github.com/Dash-Industry-Forum/dash.js) for MPEG-DASH playback and [A-Frame 1.7.0](https://github.com/aframevr/aframe) for WebVR integration.
+This project demonstrates how to stream 360° video content using [dash.js](https://github.com/Dash-Industry-Forum/dash.js) for MPEG-DASH playback and [A-Frame](https://github.com/aframevr/aframe) for WebVR integration.
 
 ## Features
 
