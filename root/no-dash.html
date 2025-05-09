@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360 Video — FIL Research Group</title>
+    <meta name="description" content="360 Video — FIL Research Group">
+    <script src="scripts/aframe.min.js"></script>
+    <script src="scripts/play-on-click.js"></script>
+    <script src="scripts/hide-on-play.js"></script>
+    <script src="scripts/dash.all.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="video"
+               loop
+               crossorigin="anonymous"
+               playsinline webkit-playsinline>
+        </video>
+      </a-assets>
+      <a-videosphere
+        src="#video"
+        play-on-click>
+      </a-videosphere>
+
+      <a-camera>
+        <a-entity
+          position="0 0 -1.5"
+          text="align:center;
+                width:6;
+                wrapCount:100;
+                color: black;
+                value: Click or tap to start video"
+          hide-on-play="#video">
+        </a-entity>
+      </a-camera>
+    </a-scene>
+    <script>
+        (function () {
+            var url = "assets/manifest-no-dash.mpd";
+            var player = dashjs.MediaPlayer().create();
+
+            player.initialize(document.querySelector("#video"), url, false);
+        })();
+    </script>
+  </body>
+</html>
+
