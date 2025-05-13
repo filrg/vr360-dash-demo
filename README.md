@@ -17,7 +17,7 @@ This project demonstrates how to stream 360° video content using [dash.js](http
 Install `nghttp2` server:
 
 ```bash
-sudo apt install http2-server
+sudo apt install nghttp2-server
 ```
 
 ## Quick Start
